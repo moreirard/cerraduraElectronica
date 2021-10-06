@@ -2,9 +2,16 @@ package cerraduraElectronica;
 
 public class CerraduraElectronica {
 
-	private Boolean abierta = true;
-	public boolean estaAbierta() {
-		return abierta;
+	private Boolean estado;
+
+	public CerraduraElectronica(Boolean estado) {
+		this.estado = estado;
 	}
+
+	public boolean estaAbierta() {
+		return estado;
+	}
+
+
 
 }

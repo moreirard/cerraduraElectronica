@@ -8,7 +8,7 @@ public class CerraduraElectronicaTest {
 
 	@Test
 	public void alCrearLaCerraduraElectronicaEstaAbierta() {
-		CerraduraElectronica cerradura = new CerraduraElectronica();
+		CerraduraElectronica cerradura = new CerraduraElectronica(Boolean.TRUE);
 		assertTrue(cerradura.estaAbierta());
 	}
 
