@@ -11,5 +11,12 @@ public class CerraduraElectronicaTest {
 		CerraduraElectronica cerradura = new CerraduraElectronica();
 		assertTrue(cerradura.estaAbierta());
 	}
-
+	
+	
+        @Test
+	public void alCerrarLaCerraduraElectronicaEstaCerrada() {
+		CerraduraElectronica cerradura = new CerraduraElectronica();
+		cerradura.cerrar();
+		assertFalse(cerradura.estaAbierta());
+	}
 }
